@@ -1,0 +1,9 @@
+---
+- hosts: local
+  become_method: sudo
+  remote_user: root
+  tasks:
+    - name: hello message
+      debug:
+        msg: "Hello this is a test message"
+      
